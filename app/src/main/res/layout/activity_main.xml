@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/image"
     android:orientation="vertical"
-    android:background="@color/purple_700"
     tools:context=".MainActivity">
 
 
@@ -14,24 +14,27 @@
 
 
 
-   <com.google.android.material.textfield.TextInputEditText
+   <EditText
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:hint="Enter weight in kg"
        android:inputType="numberDecimal"
+       android:textStyle="bold"
+       android:textColorHint="@color/black"
        android:id="@+id/weight"
        android:cursorVisible="true"
        android:textSize="30dp"/>
 
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter height in cm"
         android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
         android:cursorVisible="true"
-        android:textStyle=""
+        android:textStyle="bold"
         android:textSize="30dp"/>
 
     <Button
@@ -39,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="Calculate BMI"
         android:id="@+id/btn"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:textSize="30dp"/>
 
 
@@ -48,7 +51,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Result"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_error"
             android:textSize="50dp"
             android:id="@+id/result"
             android:textAlignment="center"/>
@@ -56,7 +61,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="you're healthy"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_error"
         android:id="@+id/txtmsg"
         android:textSize="30dp"
         android:textAlignment="center"/>

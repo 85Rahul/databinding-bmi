@@ -85,16 +85,7 @@ class MainActivity : AppCompatActivity(){
 
             R.id.BMI -> {
 
-               val progress= ProgressDialog(this)
-                    progress.setCancelable(false)
-                    progress.setTitle(resources.getString(R.string.app_name))
-                    progress.setMessage("please wait")
-                    progress.setProgressStyle(ProgressDialog.STYLE_SPINNER)
-
-
-                progress.show()
-
-                val intent=Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdc.gov/healthyweight/assessing/bmi/index.html"))
+                val intent=Intent(this, webviewActivity::class.java)
                 startActivity(intent)
                 return true
 
