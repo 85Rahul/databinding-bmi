@@ -13,7 +13,6 @@ import com.example.firstbmi.databinding.ActivityWebviewBinding
 
 
 
-
 class webviewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityWebviewBinding
     override fun onCreate(savedInstanceState: Bundle?) {

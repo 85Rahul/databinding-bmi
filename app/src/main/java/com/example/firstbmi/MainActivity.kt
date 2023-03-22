@@ -105,6 +105,10 @@ class MainActivity : AppCompatActivity(){
                 startActivity(intent)
 
             }
+            R.id.ranking->{
+                val intent=Intent(this,rate_us::class.java)
+                startActivity(intent)
+            }
 
         }
         return true

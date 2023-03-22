@@ -18,6 +18,11 @@
         android:title="Contect us"
         android:id="@+id/contect" />
 
+<item
+    app:showAsAction="never"
+    android:title="Rate_us"
+    android:id="@+id/ranking"/>
+
     <item
         app:showAsAction="never"
         android:title="Exit"
